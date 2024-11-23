@@ -1,0 +1,149 @@
+:root {
+  --blue: #4d5ae5;
+  --main-text: #2e2f42;
+  --grey: #434455;
+  --white: #ffffff;
+  --footer-descr: #f4f4fd;
+  --font-family: "Roboto", sans-serif;
+  --second-family: "Raleway", sans-serif;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.list {
+  list-style: none;
+}
+
+/* HEADER */
+.logo {
+  color: var(--blue);
+  font-family: var(--second-family);
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.logo-studio {
+  color: var(--main-text);
+}
+
+.element-title {
+  color: var(--main-text);
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  cursor: pointer;
+}
+
+.element-title:hover,
+.element-title:focus{
+  color: var(--blue);
+}
+
+.adress-element {
+  color: var(--grey);
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+  font-style: normal;
+  cursor: pointer;
+}
+
+.adress-element:hover,
+.adress-element:focus{
+  color: var(--blue);
+}
+
+/* 1 section */
+
+.main-title {
+  color: var(--white);
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 107%;
+  letter-spacing: 0.02em;
+}
+
+.button {
+  color: var(--white);
+  background-color: var(--blue);
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+}
+
+/* 2 section */
+
+.services-title {
+  color: var(--main-text);
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 120%;
+  letter-spacing: 0.02em;
+}
+
+.services-descr {
+  color: var(--grey);
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+}
+
+/* 4 section */
+
+.section-title {
+  color: var(--main-text);
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 111%;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.master-name {
+  color: var(--main-text);
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 120%;
+  letter-spacing: 0.02em;
+  text-align: center;
+}
+
+.master-descr {
+  color: var(--grey);
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+  text-align: center;
+}
+
+/* Footer */
+
+.footer-descr {
+  color: var(--footer-descr);
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+}
