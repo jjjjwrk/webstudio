@@ -8,6 +8,26 @@
   --second-family: "Raleway", sans-serif;
 }
 
+h1,
+h2,
+h3,
+h4,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+}
+
 .link {
   text-decoration: none;
 }
@@ -16,7 +36,43 @@
   list-style: none;
 }
 
+.container {
+  width: 1158px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+
 /* HEADER */
+.header{
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-list{
+  display: flex;
+  align-items: center;
+}
+
+.header-menu-list{
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.address-list{
+  display: flex;
+  align-items: center;
+}
+
 .logo {
   color: var(--blue);
   font-family: var(--second-family);
@@ -25,6 +81,10 @@
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+}
+
+.header-logo{
+  margin-right: 76px;
 }
 
 .logo-studio {
@@ -42,7 +102,7 @@
 }
 
 .element-title:hover,
-.element-title:focus{
+.element-title:focus {
   color: var(--blue);
 }
 
@@ -58,8 +118,12 @@
 }
 
 .adress-element:hover,
-.adress-element:focus{
+.adress-element:focus {
   color: var(--blue);
+}
+
+.adress-mail{
+  margin-right: 40px;
 }
 
 /* 1 section */
@@ -146,4 +210,41 @@
   font-size: 16px;
   line-height: 150%;
   letter-spacing: 0.02em;
+}
+
+/* Portfolio */
+
+.portfolio-btn {
+  color: var(--blue);
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  text-align: center;
+}
+
+.portfolio-btn:hover,
+.portfolio-btn:focus {
+  color: var(--white);
+  background-color: var(--blue);
+  cursor: pointer;
+}
+
+.card-title {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 120%;
+  letter-spacing: 0.02em;
+  color: var(--main-text);
+}
+
+.card-descr {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+  color: var(--grey);
 }
