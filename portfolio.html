@@ -11,7 +11,10 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,800;1,800&family=Roboto:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@3.0.1/modern-normalize.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@3.0.1/modern-normalize.min.css"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
@@ -19,14 +22,16 @@
       <div class="container header-container">
         <nav class="nav-list">
           <a href="./index.html" class="logo header-logo link"
-          >Web<span class="logo-studio">Studio</span></a
-        >
+            >Web<span class="logo-studio">Studio</span></a
+          >
           <ul class="list header-menu-list">
             <li>
               <a href="./index.html" class="element-title link">Studio</a>
             </li>
             <li>
-              <a href="./portfolio.html" class="element-title link">Portfolio</a>
+              <a href="./portfolio.html" class="element-title link"
+                >Portfolio</a
+              >
             </li>
             <li>
               <a href="" class="element-title link">Contacts</a>
@@ -36,7 +41,9 @@
         <address>
           <ul class="list address-list">
             <li>
-              <a href="mailto:info@devstudio.com" class="adress-element adress-mail link"
+              <a
+                href="mailto:info@devstudio.com"
+                class="adress-element adress-mail link"
                 >info@devstudio.com</a
               >
             </li>
@@ -49,72 +56,129 @@
         </address>
       </div>
     </header>
-    <section>
-      <nav>
-        <ul class="list">
-          <li><button class="portfolio-btn">All</button></li>
-          <li><button class="portfolio-btn">Web Site</button></li>
-          <li><button class="portfolio-btn">App</button></li>
-          <li><button class="portfolio-btn">Design</button></li>
-          <li><button class="portfolio-btn">Marketing</button></li>
+    <section class="portfolio-section">
+      <div class="container">
+        <nav>
+          <ul class="list portfolio-btn-list">
+            <li><button class="portfolio-btn">All</button></li>
+            <li><button class="portfolio-btn">Web Site</button></li>
+            <li><button class="portfolio-btn">App</button></li>
+            <li><button class="portfolio-btn">Design</button></li>
+            <li><button class="portfolio-btn">Marketing</button></li>
+          </ul>
+        </nav>
+        <ul class="list portfolio-list">
+          <li class="portfolio-card">
+            <img
+              src="./images/photo-1.png"
+              alt="section-photo"
+              width="360"
+              height="300"
+            />
+            <div class="portfolio-card-wrapper">
+              <h2 class="card-title">Banking App Interface Concept</h2>
+              <p class="card-descr">App</p>
+            </div>
+          </li>
+          <li class="portfolio-card">
+            <img
+              src="./images/photo-1.png"
+              alt="section-photo"
+              width="360"
+              height="300"
+            />
+            <div class="portfolio-card-wrapper">
+              <h2 class="card-title">Cashless Payment</h2>
+              <p class="card-descr">Marketing</p>
+            </div>
+          </li>
+          <li class="portfolio-card">
+            <img
+              src="./images/photo-1.png"
+              alt="section-photo"
+              width="360"
+              height="300"
+            />
+            <div class="portfolio-card-wrapper">
+              <h2 class="card-title">Meditation App</h2>
+              <p class="card-descr">App</p>
+            </div>
+          </li>
+          <li class="portfolio-card">
+            <img
+              src="./images/photo-1.png"
+              alt="section-photo"
+              width="360"
+              height="300"
+            />
+            <div class="portfolio-card-wrapper">
+              <h2 class="card-title">Taxi Service</h2>
+              <p class="card-descr">Marketing</p>
+            </div>
+          </li>
+          <li class="portfolio-card">
+            <img
+              src="./images/photo-1.png"
+              alt="section-photo"
+              width="360"
+              height="300"
+            />
+            <div class="portfolio-card-wrapper">
+              <h2 class="card-title card-title">Screen Illustrations</h2>
+              <p class="card-descr">Design</p>
+            </div>
+          </li>
+          <li class="portfolio-card">
+            <img
+              src="./images/photo-1.png"
+              alt="section-photo"
+              width="360"
+              height="300"
+            />
+            <div class="portfolio-card-wrapper">
+              <h2 class="card-title">Online Courses</h2>
+              <p class="card-descr">Marketing</p>
+            </div>
+          </li>
+          <li class="portfolio-card">
+            <img
+              src="./images/photo-1.png"
+              alt="section-photo"
+              width="360"
+              height="300"
+            />
+            <div class="portfolio-card-wrapper">
+              <h2 class="card-title">Instagram Stories Concept</h2>
+              <p class="card-descr">Design</p>
+            </div>
+          </li>
+          <li class="portfolio-card">
+            <img src="./images/photo-1.png" alt="" width="360" height="300" />
+            <div class="portfolio-card-wrapper">
+              <h2 class="card-title">Organic Food</h2>
+              <p class="card-descr">Web Site</p>
+            </div>
+          </li>
+          <li class="portfolio-card">
+            <img src="./images/photo-1.png" alt="" width="360" height="300" />
+            <div class="portfolio-card-wrapper">
+              <h2 class="card-title">Fresh Coffee</h2>
+              <p class="card-descr">Web Site</p>
+            </div>
+          </li>
         </ul>
-      </nav>
-      <ul class="list">
-        <li>
-          <img src="./images/photo-1.png" alt="section-photo" />
-          <h2 class="card-title">Banking App Interface Concept</h2>
-          <p class="card-descr">App</p>
-        </li>
-        <li>
-          <img src="./images/photo-1.png" alt="section-photo" />
-          <h2 class="card-title">Cashless Payment</h2>
-          <p class="card-descr">Marketing</p>
-        </li>
-        <li>
-          <img src="./images/photo-1.png" alt="section-photo" />
-          <h2 class="card-title">Meditation App</h2>
-          <p class="card-descr">App</p>
-        </li>
-        <li>
-          <img src="./images/photo-1.png" alt="section-photo" />
-          <h2 class="card-title">Taxi Service</h2>
-          <p class="card-descr">Marketing</p>
-        </li>
-        <li>
-          <img src="./images/photo-1.png" alt="section-photo" />
-          <h2 class="card-title class="card-descr"">Screen Illustrations</h2>
-          <p class="card-descr">Design</p>
-        </li>
-        <li>
-          <img src="./images/photo-1.png" alt="section-photo" />
-          <h2 class="card-title">Online Courses</h2>
-          <p class="card-descr">Marketing</p>
-        </li>
-        <li>
-          <img src="./images/photo-1.png" alt="section-photo" />
-          <h2 class="card-title">Instagram Stories Concept</h2>
-          <p class="card-descr">Design</p>
-        </li>
-        <li>
-          <img src="./images/photo-1.png" alt="" />
-          <h2 class="card-title">Organic Food</h2>
-          <p class="card-descr">Web Site</p>
-        </li>
-        <li>
-          <img src="./images/photo-1.png" alt="" />
-          <h2 class="card-title">Fresh Coffee</h2>
-          <p class="card-descr">Web Site</p>
-        </li>
-      </ul>
+      </div>
     </section>
-    <footer>
+    <footer class="footer">
+      <div class="container">
         <a href="./index.html" class="logo link"
-        >Web<span class="logo-studio">Studio</span></a
-      >
-      <p class="footer-descr">
-        Increase the flow of customers and sales for your business with digital
-        marketing & growth solutions.
-      </p>
+          >Web<span class="logo-studio logo-footer-span">Studio</span></a
+        >
+        <p class="footer-descr">
+          Increase the flow of customers and sales for your business with
+          digital marketing & growth solutions.
+        </p>
+      </div>
     </footer>
   </body>
 </html>

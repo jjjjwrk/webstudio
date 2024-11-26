@@ -4,6 +4,7 @@
   --grey: #434455;
   --white: #ffffff;
   --footer-descr: #f4f4fd;
+  --white-grey: #e7e9fc;
   --font-family: "Roboto", sans-serif;
   --second-family: "Raleway", sans-serif;
 }
@@ -48,6 +49,7 @@ img {
 .header {
   padding-top: 24px;
   padding-bottom: 24px;
+  border-bottom: 1px solid var(--white-grey);
 }
 
 .header-container {
@@ -177,6 +179,7 @@ img {
 .menu-container {
   display: flex;
   gap: 24px;
+  flex-wrap: wrap;
 }
 
 .menu-list-item {
@@ -215,6 +218,7 @@ img {
 .deals-menu {
   display: flex;
   gap: 24px;
+  flex-wrap: wrap;
 }
 
 .deals-card {
@@ -277,21 +281,20 @@ img {
   text-align: center;
 }
 
-.team-wrapper{
+.team-wrapper {
   padding-top: 32px;
   padding-bottom: 32px;
 }
 
-
 /* Footer */
 
-.footer{
+.footer {
   padding-top: 100px;
   padding-bottom: 100px;
   background-color: var(--main-text);
 }
 
-.logo-footer-span{
+.logo-footer-span {
   color: var(--white);
 }
 
@@ -308,6 +311,20 @@ img {
 
 /* Portfolio */
 
+.portfolio-section {
+  padding-top: 96px;
+  padding-bottom: 120px;
+}
+
+.portfolio-btn-list {
+  display: flex;
+  margin-bottom: 72px;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
 .portfolio-btn {
   color: var(--blue);
   font-family: var(--font-family);
@@ -316,6 +333,13 @@ img {
   line-height: 150%;
   letter-spacing: 0.04em;
   text-align: center;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 24px;
+  padding-right: 24px;
+  align-items: center;
+  border: 1px solid var(--white-grey);
+  border-radius: 4px;
 }
 
 .portfolio-btn:hover,
@@ -325,6 +349,24 @@ img {
   cursor: pointer;
 }
 
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 48px;
+  column-gap: 24px;
+}
+
+.portfolio-card {
+  width: calc((100% - 48px) / 3);
+}
+
+.portfolio-card-wrapper {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-left: 10px;
+  border: 1px solid var(--white-grey);
+}
+
 .card-title {
   font-family: var(--font-family);
   font-weight: 500;
@@ -332,6 +374,7 @@ img {
   line-height: 120%;
   letter-spacing: 0.02em;
   color: var(--main-text);
+  margin-bottom: 8px;
 }
 
 .card-descr {
