@@ -55,7 +55,10 @@ img {
 .header-container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+}
+
+.address-container{
+  margin-left: auto;
 }
 
 .nav-list {
@@ -100,6 +103,8 @@ img {
   line-height: 24px;
   letter-spacing: 0.02em;
   cursor: pointer;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .element-title:hover,
@@ -116,6 +121,8 @@ img {
   letter-spacing: 0.02em;
   font-style: normal;
   cursor: pointer;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .adress-element:hover,
@@ -163,8 +170,8 @@ img {
   margin-right: auto;
   border-radius: 4px;
   padding: 16px 32px;
+  text-align: center;
   min-width: 169px;
-  height: 56px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   border: none;
 }
