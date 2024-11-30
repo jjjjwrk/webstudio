@@ -5,6 +5,7 @@
   --white: #ffffff;
   --footer-descr: #f4f4fd;
   --white-grey: #e7e9fc;
+  --wrapper: #f4f4fd;
   --font-family: "Roboto", sans-serif;
   --second-family: "Raleway", sans-serif;
 }
@@ -57,7 +58,7 @@ img {
   align-items: center;
 }
 
-.address-container{
+.address-container {
   margin-left: auto;
 }
 
@@ -139,6 +140,13 @@ img {
 .hero-section {
   padding-top: 188px;
   padding-bottom: 188px;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/bg-image.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   background-color: var(--main-text);
 }
 
@@ -210,6 +218,21 @@ img {
   font-size: 16px;
   line-height: 150%;
   letter-spacing: 0.02em;
+}
+
+.menu-svg-wrapper {
+  width: 264px;
+  height: 112px;
+  background-color: var(--wrapper);
+  margin-bottom: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-svg {
+  width: 64px;
+  height: 64px;
 }
 
 /* 3 section */
@@ -286,11 +309,39 @@ img {
   line-height: 150%;
   letter-spacing: 0.02em;
   text-align: center;
+  margin-bottom: 8px;
 }
 
 .team-wrapper {
   padding-top: 32px;
   padding-bottom: 32px;
+}
+
+.social-svg-icons {
+  width: 20px;
+  height: 20px;
+}
+
+.team-social-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+.team-social-list-item {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  background-color: var(--blue);
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+}
+
+.team-social-list-item:hover,
+.team-social-list-item:focus {
+  background-color: var(--main-text);
 }
 
 /* Footer */
@@ -315,6 +366,69 @@ img {
   margin-top: 16px;
   max-width: 264px;
 }
+
+.footer-container {
+  display: flex;
+  gap: 120px;
+}
+
+.footer-social-title {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+  color: var(--white);
+  margin-bottom: 16px;
+}
+
+.footer-social-list{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+/* CUSTOMERS */
+
+.customers-section{
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.customers-svg-icon{
+  width: 104px;
+  height: 56px;
+}
+
+.customers-list{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  flex-wrap: wrap;
+  margin-top: 72px;
+}
+
+.customers-list-item{
+  width: 168px;
+  height: 88px;
+}
+
+.customers-svg-link{
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--grey);
+  border-radius: 4px;
+}
+
+.customers-svg-link:hover,
+.customers-svg-link:focus{
+  border: 5px solid var(--blue);  
+}
+
 
 /* Portfolio */
 
