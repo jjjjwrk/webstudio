@@ -117,8 +117,8 @@ img {
   transition-duration: 200ms;
 }
 
-.studio-element-title{
-   display: inline-block;
+.studio-element-title {
+  display: inline-block;
   position: relative;
   color: var(--blue);
 }
@@ -210,7 +210,7 @@ img {
 }
 
 .button:hover,
-.button.focus{
+.button.focus {
   background-color: transparent;
   scale: 1.05;
 }
@@ -403,7 +403,14 @@ img {
 
 .footer-container {
   display: flex;
-  gap: 120px;
+}
+
+.footer-logo-wrapper {
+  margin-right: 120px;
+}
+
+.footer-media-wrapper {
+  margin-right: 80px;
 }
 
 .footer-social-title {
@@ -421,6 +428,62 @@ img {
   justify-content: center;
   align-items: center;
   gap: 16px;
+}
+
+.footer-email-input {
+  width: 264px;
+  height: 40px;
+  border-radius: 4px;
+  background-color: transparent;
+  border: 1px solid var(--white);
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 16px;
+  padding-right: 16px;
+  color: var(--white);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 200%;
+  letter-spacing: 0.04em;
+}
+
+.tg-svg {
+  width: 24px;
+  height: 20px;
+  margin-left: 16px;
+  fill: var(--white);
+}
+
+.footer-form{
+  display: flex;
+  gap: 24px;
+}
+
+.footer-subscribe-btn {
+  width: 165px;
+  height: 40px;
+  cursor: pointer;
+  background-color: var(--blue);
+  border-radius: 4px;
+  border: 1px solid orchid;
+  text-align: center;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 500ms linear;
+}
+
+.footer-subscribe-btn:hover,
+.footer-subscribe-btn:focus{
+  background-color: cyan;
+  color: blueviolet;
+  border: 1px solid var(--wrapper);
 }
 
 /* CUSTOMERS */
@@ -469,13 +532,13 @@ img {
 
 /* Portfolio */
 
-.portfolio-element-title{
+.portfolio-element-title {
   display: inline-block;
   position: relative;
   color: var(--blue);
 }
 
-.portfolio-element-title::after{
+.portfolio-element-title::after {
   display: inline-block;
   content: "";
   width: 66px;
@@ -597,7 +660,7 @@ img {
 
 /* MODAL */
 
-.backdrop{
+.backdrop {
   position: fixed;
   top: 0;
   left: 0;
@@ -605,7 +668,7 @@ img {
   width: 100%;
   height: 100%;
   background-color: rgba(161, 60, 163, 0.5);
-  transition: opacity 500ms linear, visibility 500ms linear  ;
+  transition: opacity 500ms linear, visibility 500ms linear;
 }
 
 .backdrop.is-hidden {
@@ -614,7 +677,7 @@ img {
   pointer-events: none;
 }
 
-.modal{
+.modal {
   width: 408px;
   height: 584px;
   position: fixed;
@@ -625,18 +688,18 @@ img {
   border-radius: 7%;
 }
 
-.modal-close-svg{
+.modal-close-svg {
   width: 8px;
   height: 8px;
   fill: violet;
 }
 
 .modal-close-svg:hover,
-.modal-close-svg:focus{
+.modal-close-svg:focus {
   fill: aqua;
 }
 
-.modal-close-btn{
+.modal-close-btn {
   width: 30px;
   height: 30px;
   padding: 0;
@@ -652,7 +715,123 @@ img {
   border-color: pink;
 }
 
-.modal-close-btn:hover, 
-.modal-close-btn:focus{
+.modal-close-btn:hover,
+.modal-close-btn:focus {
   background-color: pink;
+}
+
+/* MODAL INPUTS */
+
+.form-title {
+  margin: 0 auto;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+  text-align: center;
+  font-family: var(--font-family);
+  color: var(--main-text);
+  margin-bottom: 13px;
+}
+
+.modal-form {
+  display: flex;
+  flex-direction: column;
+  padding-top: 72px;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 24px;
+}
+
+.modal-label {
+  margin-bottom: 8px;
+}
+
+.modal-inpt-form {
+  width: 100%;
+  height: 40px;
+  border-radius: 4px;
+  border: 1px solid var(--main-text);
+  padding-left: 38px;
+}
+
+.modal-input-title {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 117%;
+  letter-spacing: 0.04em;
+  font-family: var(--font-family);
+  color: var(--grey);
+  display: flex;
+  margin-bottom: 4px;
+}
+
+.modal-message {
+  width: 100%;
+  height: 120px;
+  resize: none;
+  padding-top: 8px;
+  padding-left: 16px;
+  padding-bottom: 8px;
+}
+
+.modal-submit-btn {
+  margin: 0 auto;
+  width: 169px;
+  height: 40px;
+  background-color: var(--blue);
+  color: var(--white);
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  transition: background-color 500ms linear;
+}
+
+.modal-submit-btn:hover,
+.modal-submit-btn:focus {
+  border: transparent;
+  background-color: pink;
+  color: purple;
+  box-shadow: 0 4px 4px 0 plum;
+}
+
+.privacy-descr {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 117%;
+  letter-spacing: 0.04em;
+  font-family: var(--font-family);
+  color: var(--grey);
+  margin-left: 8px;
+}
+
+.privacy_police_link {
+  line-height: 133%;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: var(--blue);
+}
+
+.checkbox_label {
+  display: flex;
+  margin-bottom: 24px;
+}
+
+.input-svg {
+  width: 18px;
+  height: 24px;
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translate(0, -50%);
+}
+
+.modal-input-wrapper {
+  display: block;
+  position: relative;
 }
