@@ -174,6 +174,19 @@ img {
   background-color: var(--main-text);
 }
 
+@media screen and (min-device-pixel-ratio: 2),
+screen and (-webkit-min-device-pixel-ratio: 2),
+screen and (min-resolution: 192dpi),
+  sceen and (min-resolution: 2dppx) {
+  .hero-section {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url("../images/bg-image-2x.jpg");
+  }
+}
+
 .main-title {
   color: var(--white);
   font-family: var(--font-family);
@@ -447,7 +460,7 @@ img {
   letter-spacing: 0.04em;
 }
 
-.footer-email-input::placeholder{
+.footer-email-input::placeholder {
   color: var(--white);
 }
 
@@ -458,7 +471,7 @@ img {
   fill: var(--white);
 }
 
-.footer-form{
+.footer-form {
   display: flex;
   gap: 24px;
 }
@@ -484,7 +497,7 @@ img {
 }
 
 .footer-subscribe-btn:hover,
-.footer-subscribe-btn:focus{
+.footer-subscribe-btn:focus {
   background-color: cyan;
   color: blueviolet;
 }
@@ -761,7 +774,7 @@ img {
   transition: border 500ms linear;
 }
 
-.modal-inpt-form:focus{
+.modal-inpt-form:focus {
   outline: none;
   border: 2px solid violet;
 }
@@ -792,7 +805,7 @@ img {
   transition: border 500ms linear;
 }
 
-.modal-message:focus{
+.modal-message:focus {
   outline: none;
   border: 1px solid violet;
 }
